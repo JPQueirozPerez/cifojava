@@ -1,17 +1,26 @@
 package com.company;
 
+import java.util.ArrayList;
+
 public class Person {
 
     private String name;
     private String surname;
     private int age;
     private boolean vegan;
+    Car car;
+    ArrayList<Dog> dogs = new ArrayList<Dog>();
 
-    public Person(String name, String surname, int age, boolean vegan) {
-        this.name = name;
+    public Person(){}
+
+    //constructor
+    public Person(String name, String surname, int age, boolean vegan, Car car){
+        this.name  = name;
         this.surname = surname;
         this.age = age;
         this.vegan = vegan;
+        this.car = car;
+        this.dogs = new ArrayList<Dog>();
     }
 
     public String getName() {
