@@ -23,6 +23,29 @@ public class Person {
         this.dogs = new ArrayList<Dog>();
     }
 
+    //methods non-static
+    public boolean idAdult(){
+        return getAge() >= 18;
+    }
+
+    public String sayHello(){
+        return "Hello";
+    }
+
+    public String sayHelloPerson(){
+        return "Hello " + getName();
+    }
+
+    public void printName(){
+        System.out.println("This person's name is: " + getName() + " " + getSurname());
+
+        Main.hello();
+    }
+
+    public void printPerson(){
+        System.out.println(this.getName() + " " + this.getSurname() + " " + this.car.make + " " + this.car.year + " " + this.dogs.get(0).name);
+    }
+
     public String getName() {
         return name;
     }
@@ -41,6 +64,22 @@ public class Person {
 
     public int getAge() {
         return age;
+    }
+
+    public Car getCar() {
+        return car;
+    }
+
+    public void setCar(Car car) {
+        this.car = car;
+    }
+
+    public ArrayList<Dog> getDogs() {
+        return dogs;
+    }
+
+    public void setDogs(ArrayList<Dog> dogs) {
+        this.dogs = dogs;
     }
 
     public void setAge(int age) {
