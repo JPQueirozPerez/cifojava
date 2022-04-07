@@ -8,7 +8,7 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        ArrayList<User> users = new ArrayList<>();
+        //ArrayList<User> users = new ArrayList<>();
 
             menuOptions();
 
