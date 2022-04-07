@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here
         ArrayList<User> users = new ArrayList<>();
-        
+
             menuOptions();
 
             //print mini-menu with 4 options
