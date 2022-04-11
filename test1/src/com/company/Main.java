@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -41,7 +43,6 @@ public class Main {
         System.out.println("Is " + david.getName() + " an adult? " + davidAdult);
         System.out.println(david.sayHelloPerson());
         System.out.println("Is " + alex.getName() + " an adult? " + alexAdult);*/
-
     }
 
     public static void hello(){
